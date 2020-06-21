@@ -1,0 +1,12 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"noEmit": true,
+		"strict": false,
+		"declaration": true,
+		"declarationDir": "src",
+		"moduleResolution": "node"
+	},
+	"include": ["src/*"],
+	"exclude": ["node_modules"]
+}

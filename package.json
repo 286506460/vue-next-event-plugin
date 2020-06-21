@@ -1,0 +1,48 @@
+{
+	"name": "vue-next-event-plugin",
+	"version": "1.0.0-beta.1",
+	"license": "MIT",
+	"author": "ssy <286506460@qq.com>",
+	"description": "vue2.x $on/$off/$emit",
+	"main": "dist/vue-next-event-plugin.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"src",
+		"dist"
+	],
+	"engines": {
+		"node": ">=10.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+git@github.com:286506460/vue-next-event-plugin.git"
+	},
+	"bugs": {
+		"url": "https://github.com/286506460/vue-next-event-plugin/issues"
+	},
+	"homepage": "https://github.com/286506460/vue-next-event-plugin/tree/master/#readme",
+	"keywords": [
+		"vue-next",
+		"events",
+		"emitter"
+	],
+	"scripts": {
+		"dev": "vite",
+		"build": "rollup -c"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@babel/core": "^7.10.2",
+		"@vue/compiler-sfc": "^3.0.0-beta.14",
+		"rollup": "^2.17.0",
+		"rollup-plugin-babel": "^4.4.0",
+		"rollup-plugin-terser": "^6.1.0",
+		"rollup-plugin-typescript2": "^0.27.1",
+		"typescript": "^3.9.5",
+		"vite": "^0.20.0",
+		"vue": "^3.0.0-beta.14"
+	},
+	"peerDependencies": {
+		"vue": "^3.0.0-beta.14"
+	}
+}

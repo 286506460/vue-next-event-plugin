@@ -1,0 +1,40 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>vue-next-event-plugin</title>
+	</head>
+	<body>
+		<div id="app"></div>
+		<script type="module">
+			import { createApp, ref } from 'vue/dist/vue.esm-bundler.js'
+			import CompA from './CompA.vue'
+			import CompB from './CompB.vue'
+			import VueNextEventPlugin from '/@dist/vue-next-event-plugin.js'
+
+			const app = createApp({
+				name: 'App',
+				components: {
+					CompA,
+					CompB,
+				},
+				template: `
+			   <div>
+			     <h1>{{ msg }}</h1>
+			     <comp-a></comp-a>
+			     <comp-b></comp-b>
+			   </div>
+			   `,
+				setup() {
+					const msg = ref('Hello')
+					return {
+						msg,
+					}
+				},
+			})
+
+			app.use(VueNextEventPlugin)
+			app.mount('#app')
+		</script>
+	</body>
+</html>
